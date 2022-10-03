@@ -1,0 +1,21 @@
+@use "../../sass/vars" as *;
+
+.stats {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+
+    p {
+        font-weight: lighter;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+    h3 {
+    
+    }
+
+    &__posts, &__followers, &__following {
+      
+    
+    }
+}

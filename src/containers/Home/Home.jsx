@@ -3,6 +3,7 @@ import ProfileHeader from "../../components/ProfileHeader/ProfileHeader";
 import "./Home.scss"
 import corn1 from "../../images/corn1.jpeg"
 import corn2 from "../../images/Ears-corn.webp"
+import Statistics from "../../components/Statistics/Statistics";
 
 const Home = (props) => {
     const {profile} = props;
@@ -17,7 +18,8 @@ const Home = (props) => {
         <div className="home">
             <ProfileHeader profile = {profile}/>
             <Description profile = {profile}/>
-            {renderImages}
+            <Statistics imagesArr = {imagesArr}/>
+          
         </div>
     )
 }
