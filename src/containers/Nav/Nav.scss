@@ -1,1 +1,12 @@
-@use "../../sass/vars" as *
+@use "../../sass/vars" as *;
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    &__home {
+        color: black;
+    }
+}

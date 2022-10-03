@@ -5,6 +5,7 @@ import {MdOutlineAddBox} from "react-icons/md"
 import {RiCompassLine} from "react-icons/ri"
 import {AiOutlineHeart} from "react-icons/ai"
 import {CgProfile} from "react-icons/cg"
+import { Link } from "react-router-dom"
 
 const Nav = (props) => {
 
@@ -15,9 +16,11 @@ const Nav = (props) => {
             <div className="nav__logo">
                 <h1>InstaJoke</h1>
             </div>
-            <div className="nav__home">
-                <FaHome />
-            </div>
+            <Link to = "/home">
+                <div className="nav__home">
+                    <FaHome />
+                </div>
+            </Link>
             <div className="nav__send">
                 <FiSend />
             </div>
