@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.scss"
+import Home from "./containers/Home/Home";
 import Nav from "./containers/Nav/Nav";
 import ProfileLog from "./containers/ProfileLog/ProfileLog";
 
@@ -25,7 +26,7 @@ const [profile, setProfile] = useState({username: ""})
 
           <Route 
           path = "/home" 
-          element = {<h1>Bruh</h1>}
+          element = {profile.username && <Home />}
           ></Route>
           <Route
           path = "/"
