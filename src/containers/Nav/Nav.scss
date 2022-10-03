@@ -12,6 +12,7 @@
 
     &__logo {
         font-size: 10px;
+        font-family: $logofont;
     }
     &__home, &__send, &__add, &__explore, &__likes, &__profile {
         font-size: 20px;
