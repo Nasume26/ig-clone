@@ -4,6 +4,7 @@ import "./Home.scss"
 import corn1 from "../../images/corn1.jpeg"
 import corn2 from "../../images/Ears-corn.webp"
 import Statistics from "../../components/Statistics/Statistics";
+import ImageSelect from "../../components/ImageSelect/ImageSelect";
 
 const Home = (props) => {
     const {profile} = props;
@@ -19,6 +20,7 @@ const Home = (props) => {
             <ProfileHeader profile = {profile}/>
             <Description profile = {profile}/>
             <Statistics imagesArr = {imagesArr}/>
+            <ImageSelect />
           
         </div>
     )
