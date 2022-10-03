@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.scss"
+import Nav from "./containers/Nav/Nav";
 import ProfileLog from "./containers/ProfileLog/ProfileLog";
 
 function App() {
@@ -16,7 +17,9 @@ const [profile, setProfile] = useState({username: ""})
   return (
     <div>
       <Router>
+        {profile.username && <Nav/>}
         {!profile.username && <ProfileLog profile = {profile} setProfile = {setProfile}/>}
+   
 
         <Routes>
 
@@ -24,6 +27,14 @@ const [profile, setProfile] = useState({username: ""})
           path = "/home" 
           element = {<h1>Bruh</h1>}
           ></Route>
+          <Route
+          path = "/"
+          element = {
+            <div>
+              <h2>Welcome to InstaJoke!</h2>
+              <p>It doesn't really work???</p>
+            </div>
+          }></Route>
 
         </Routes>
       </Router>
