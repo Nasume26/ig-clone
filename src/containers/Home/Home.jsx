@@ -5,14 +5,15 @@ import corn1 from "../../images/corn1.jpeg"
 import corn2 from "../../images/Ears-corn.webp"
 import Statistics from "../../components/Statistics/Statistics";
 import ImageSelect from "../../components/ImageSelect/ImageSelect";
+import ImageRender from "../../components/ImageRender/ImageRender";
 
 const Home = (props) => {
     const {profile} = props;
 
-    const imagesArr = [corn1, corn2]
+    const imagesArr = [corn1, corn2, corn1, corn2, corn1, corn2]
 
     const renderImages = imagesArr.map((image) => {
-        return <img src= {image} />
+        return <ImageRender src= {image} />
     })
 
     return (
@@ -21,7 +22,7 @@ const Home = (props) => {
             <Description profile = {profile}/>
             <Statistics imagesArr = {imagesArr}/>
             <ImageSelect />
-          
+            {renderImages}
         </div>
     )
 }
