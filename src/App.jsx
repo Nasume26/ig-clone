@@ -16,7 +16,7 @@ const [profile, setProfile] = useState({username: ""})
 const imagesArr = [corn1, corn2, corn1, corn2, corn1, corn2, corn2, corn2, corn1]
 
 const coffeeArr = [coff1,coff2,coff3, coff1,coff2,coff3]
-const coffeeProfile = {username: "CoffeeLover445"}
+const coffeeProfile = {username: "CoffeeLoverXTREME"}
 
 
 
