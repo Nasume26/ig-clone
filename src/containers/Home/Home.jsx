@@ -22,7 +22,9 @@ const Home = (props) => {
             <Description profile = {profile}/>
             <Statistics imagesArr = {imagesArr}/>
             <ImageSelect />
-            {renderImages}
+            <div className="home__images">
+                {renderImages}
+            </div>
         </div>
     )
 }

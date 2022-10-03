@@ -16,7 +16,7 @@ const [profile, setProfile] = useState({username: ""})
 
 
   return (
-    <div>
+    <div className="app">
       <Router>
         {profile.username && <Nav/>}
         {!profile.username && <ProfileLog profile = {profile} setProfile = {setProfile}/>}
