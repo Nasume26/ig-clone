@@ -15,7 +15,7 @@ const [profile, setProfile] = useState({username: ""})
 
 const imagesArr = [corn1, corn2, corn1, corn2, corn1, corn2, corn2, corn2, corn1]
 
-const coffeeArr = [coff1,coff2,coff3]
+const coffeeArr = [coff1,coff2,coff3, coff1,coff2,coff3]
 const coffeeProfile = {username: "CoffeeLover445"}
 
 
@@ -26,7 +26,7 @@ const coffeeProfile = {username: "CoffeeLover445"}
   return (
     <div className="app">
       <Router>
-        {profile.username && <Nav/>}
+        {profile.username && <Nav profile = {profile}/>}
         {!profile.username && <ProfileLog profile = {profile} setProfile = {setProfile}/>}
    
 
@@ -41,7 +41,9 @@ const coffeeProfile = {username: "CoffeeLover445"}
           element = {
             <div>
               <h2>Welcome to InstaJoke!</h2>
-              <p>It doesn't really work???</p>
+              <p>It doesn't really work???
+                Enter your username as Coffee for a new experience!
+              </p>
             </div>
 
           }></Route>

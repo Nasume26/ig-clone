@@ -8,8 +8,26 @@ import {CgProfile} from "react-icons/cg"
 import { Link } from "react-router-dom"
 
 const Nav = (props) => {
+    const {profile} = props;
 
-
+ const renderLink = () => {   
+    if (profile.username === "coffee") {
+        return (
+            <Link to = "/coffeeguy">
+                <div className="nav__home">
+                    <FaHome />
+                </div>
+            </Link>
+        )
+    } else {
+      return(  
+        <Link to = {`/home/${profile.username}`}>
+            <div className="nav__home">
+                <FaHome />
+            </div>
+        </Link>
+    )}
+    }
 
     return (
         <div className="nav">
@@ -21,11 +39,7 @@ const Nav = (props) => {
                 value="Search"
                 />
             </div>
-            <Link to = "/home">
-                <div className="nav__home">
-                    <FaHome />
-                </div>
-            </Link>
+            {renderLink()}
             <div className="nav__send">
                 <FiSend />
             </div>
