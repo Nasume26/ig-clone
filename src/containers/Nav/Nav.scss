@@ -5,6 +5,21 @@
     align-items: center;
     justify-content: space-between;
 
+    &__search {
+        display: none;
+        input {
+            border-radius: 10px;
+            border: 2px solid grey;
+            padding: 5px;
+            color: grey;
+            background: rgba(128, 128, 128, 0.129);
+
+        }
+        input:focus {
+            background: white;
+        }
+     
+    }
 
     &__home {
         color: black;
@@ -17,5 +32,14 @@
     &__home, &__send, &__add, &__explore, &__likes, &__profile {
         font-size: 20px;
         padding: 5px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .nav {
+        &__search {
+            display:block;
+        
+        }
     }
 }

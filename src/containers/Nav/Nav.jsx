@@ -16,6 +16,11 @@ const Nav = (props) => {
             <div className="nav__logo">
                 <h1>InstaJoke</h1>
             </div>
+            <div className="nav__search">
+                <input
+                value="Search"
+                />
+            </div>
             <Link to = "/home">
                 <div className="nav__home">
                     <FaHome />
