@@ -1,12 +1,13 @@
+import ProfileHeader from "../../components/ProfileHeader/ProfileHeader";
 import "./Home.scss"
 
 const Home = (props) => {
-
+const {profile} = props;
 
     return (
-        <>
-        <h1>LEt's Go</h1>
-        </>
+        <div>
+            <ProfileHeader profile = {profile}/>
+        </div>
     )
 }
 export default Home;

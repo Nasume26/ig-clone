@@ -26,7 +26,7 @@ const [profile, setProfile] = useState({username: ""})
 
           <Route 
           path = "/home" 
-          element = {profile.username && <Home />}
+          element = {profile.username && <Home profile = {profile}/>}
           ></Route>
           <Route
           path = "/"

@@ -1,0 +1,30 @@
+@use "../../sass/vars" as *;
+
+.profile-header{
+    display: flex;
+    align-items: center;
+
+    &__pfp {
+        font-size: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__midsection {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5px;
+
+        &__username {
+            font-size: 10px;
+            padding-left: 5px;
+            text-align: center;
+        }
+
+        &__follow {
+            background: blue;
+            padding: 10px;
+        }
+    }
+}
