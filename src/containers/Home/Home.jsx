@@ -10,7 +10,7 @@ import ImageRender from "../../components/ImageRender/ImageRender";
 const Home = (props) => {
     const {profile} = props;
 
-    const imagesArr = [corn1, corn2, corn1, corn2, corn1, corn2]
+    const imagesArr = [corn1, corn2, corn1, corn2, corn1, corn2, corn2, corn2]
 
     const renderImages = imagesArr.map((image) => {
         return <ImageRender src= {image} />
