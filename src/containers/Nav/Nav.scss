@@ -9,4 +9,12 @@
     &__home {
         color: black;
     }
+
+    &__logo {
+        font-size: 10px;
+    }
+    &__home, &__send, &__add, &__explore, &__likes, &__profile {
+        font-size: 20px;
+        padding: 5px;
+    }
 }

@@ -11,11 +11,14 @@
         margin-bottom: 0px;
     }
     h3 {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
     
     }
 
     &__posts, &__followers, &__following {
-      
+      display: flex;
+      flex-direction: column;
     
     }
 }
